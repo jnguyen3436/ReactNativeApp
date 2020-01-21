@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View,Image } from 'react-native';
+import { Text, View,Image,Button} from 'react-native';
 
 export default class HelloWorldApp extends Component {
   render() {
@@ -10,6 +10,10 @@ export default class HelloWorldApp extends Component {
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
         <Text>Hello, world!</Text>
         <Image source={pic} style ={{width:193,height:110}}/>
+        <Button
+          title="Press Me"
+          >
+        </Button>
       </View>
     );
   }
