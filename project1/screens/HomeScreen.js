@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { Text, View,Button,Alert } from 'react-native';
 
 
-function AlertMe(){
+function AlertMe()
+{
   return(
-    Alert.alert("what's up")
+    Alert.alert("Till I can get my... Satisfaction")
   )
-  
   
 }
 
