@@ -1,2 +1,0 @@
-# ReactNativeApp
-first project
