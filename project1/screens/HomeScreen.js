@@ -1,27 +1,32 @@
 import React, { Component } from 'react';
-import { Text, View,Button,Alert } from 'react-native';
+import { Text, StyleSheet,View } from 'react-native';
 
 
-function AlertMe()
-{
-  return(
-    Alert.alert("Till I can get my... Satisfaction")
-  )
-  
-}
+
 
 
 export default class HelloWorldApp extends Component {
+
+  constructor(){
+    super()
+    this.state={}
+  }
+
   render() {
 
     return (
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-        <Text>Hello, world!</Text>
-        <Button 
-        title="Push me"
-        onPress={AlertMe}>
+      <View style={StyleSheet.container}>
+        <View style={style.result}> </View>
+        <View style={style.calculation}></View>
+        <View style={style.buttons}>
 
-        </Button>
+        <View style={style.numbers}></View>
+        <View style={style.operations}></View>
+
+        </View>
+
+        
+
       </View>
     );
   }
